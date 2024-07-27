@@ -8,6 +8,7 @@ import Edu from "./components/Edu";
 import Exp from "./components/Exp";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import charcoalbg from "./assets/others/Charcoal Smudge.png";
 
 function App() {
   const aboutRef = useRef();
@@ -17,7 +18,7 @@ function App() {
   return (
     <div
       className="min-h-screen bg-hero-pattern bg-cover bg-center bg-fixed "
-      style={{ cursor: `auto` }}>
+      style={{ cursor: `auto`, backgroundImage: `url(${charcoalbg})` }}>
       <div>
         <div className="navbar m-0 h-[10vh]">
           <div className="navbar-start">
