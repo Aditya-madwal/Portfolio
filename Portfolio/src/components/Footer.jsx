@@ -17,7 +17,7 @@ function Footer() {
           <a className="btn logo-font nav-logo" style={{ color: "#fef3e2" }}>
             AM.
           </a>
-          <p>Get in touch me on :</p>
+          <p className="text-xl">Get in touch with me on :</p>
         </aside>
         <nav>
           <div>

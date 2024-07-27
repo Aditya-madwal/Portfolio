@@ -48,9 +48,11 @@ function Hero() {
           <br />
           Django Developer | React Developer | UI/UX
           <br />
-          <button className="btn mt-5">
-            <a download={resume}>Download Resume</a>
-          </button>
+          <a
+            className="btn mt-5 w-[40%] font-medium"
+            href="https://drive.google.com/file/d/1gXGn-ea1KKMx7QIi6E9um19Tj1AKMdKH/view">
+            View Resume →
+          </a>
         </span>
       </div>
       {/* bitmoji section */}
