@@ -49,9 +49,11 @@ function Projects() {
             })}
           </div>
           {toggle ? (
-            <button className="btn w-full github-btn">
-              <a href="https://github.com/aditya-madwal/">Show Github →</a>
-            </button>
+            <a
+              className="btn w-full github-btn"
+              href="https://github.com/aditya-madwal/">
+              Show Github →
+            </a>
           ) : (
             <button
               className="btn w-full github-btn"

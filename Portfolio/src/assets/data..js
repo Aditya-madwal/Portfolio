@@ -5,7 +5,7 @@ export const experience = [
         firm: "KIET Group of Institutions",
         role: "GFX Designer",
         timeperiod: "Aug 2023 - July 2024",
-        desc: "lsbdjsbdj bdwed edhwehdweh dwed wehdowehdweh di"
+        desc: "Designed and created magazine pages for the Computer Science department, collaborating with the editorial team to enhance reader engagement through strategic use of color, typography, and imagery. Managed multiple tasks, met all deadlines, and facilitated bi-weekly strategy meetings with administration."
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ export const experience = [
         firm: "Microsoft",
         role: "Web Developer",
         timeperiod: "July 2024 - Present",
-        desc: "lsbdjsbdj bdwed edhwehdweh dwed wehdowehdweh di"
+        desc: "Web Developer with experience in React contributing to web development projects within the MLSA group at KIET."
     },
 ]
 
@@ -22,8 +22,8 @@ export const projects = [
         id: 1,
         title: "HealthBond",
         description: "HealthBond is a web application built using Django, JavaScript, HTML, and CSS. It helps individuals with similar illnesses connect and communicate through dedicated chatrooms. Users can register, login, create chatrooms, join existing ones, and manage their profile and chatroom memberships.",
-        techstack: ['Django', 'HTML/CSS', 'Javascript', 'Python', 'WebScokets'],
-        timeperiod: "Apr 2024 - Jun 2024",
+        techstack: ['Django', 'HTML/CSS', 'Javascript', 'Python', 'WebScokets', 'PostgresSQL', 'AJAX', 'Gemini API'],
+        timeperiod: "May 2024 - Jun 2024",
         githublink: "https://github.com/Aditya-madwal/Health-Bond",
     },
     {
@@ -32,58 +32,49 @@ export const projects = [
         description: "Developed a personal portfolio using Tailwind CSS, React, and Daisy UI. The site features a clean, modern design with responsive layouts, showcasing my projects, skills, and experience. Interactive elements and smooth transitions enhance user experience, making it an engaging platform to present my work and professional background.",
         techstack: ['React', 'Tailwind', 'DaisyUI'],
         timeperiod: "Jul 2024 - Jul 2024",
-        githublink: "https://github.com/Aditya-madwal/React-Js-tut/tree/main/counter_project/src"
+        githublink: "https://github.com/Aditya-madwal/Portfolio"
     },
     {
         id: 3,
-        title: "ndkwned",
-        description: "wbuwqbdw",
-        techstack: ['dwqdw', 'dwed', 'edwed'],
-        timeperiod: "jun 2022 - jul 2022",
-        githublink: "https://github.com/Aditya-madwal/React-Js-tut/tree/main/counter_project/src"
+        title: "Sell-n-Buy",
+        description: "Created an e-commerce website using Django, featuring robust functionalities like a shopping cart, review and rating system, and advanced search capabilities. The platform offers a seamless user experience with efficient product management and user-friendly navigation, enabling customers to browse, review, and purchase products effortlessly.",
+        techstack: ['Python', 'Django', 'HTML/CSS', 'PostgresSQL', 'JavaScript', 'AJAX'],
+        timeperiod: "Apr 2024 - May 2022",
+        githublink: "https://github.com/aditya-madwal/sell-and-buy"
     },
     {
         id: 4,
-        title: "ndkwned",
-        description: "wbuwqbdw",
-        techstack: ['dwqdw', 'dwed', 'edwed'],
-        timeperiod: "jun 2022 - jul 2022",
-        githublink: "https://github.com/Aditya-madwal/React-Js-tut/tree/main/counter_project/src"
+        title: "PocketMoney",
+        description: "PocketMoney is a budget tracker web application built with Django, Python, and Tailwind CSS. It provides a user-friendly interface for managing multiple wallets, tracking transactions, and maintaining a record of your expenses.",
+        techstack: ['Python', 'Django', 'Tailwind', 'HTML/CSS', 'JavaScript'],
+        timeperiod: "Feb 2024 - Feb 2024",
+        githublink: "https://github.com/Aditya-madwal/PocketMoney"
     },
-    {
-        id: 5,
-        title: "ndkwned",
-        description: "wbuwqbdw",
-        techstack: ['dwqdw', 'dwed', 'edwed'],
-        timeperiod: "jun 2022 - jul 2022",
-        githublink: "https://github.com/Aditya-madwal/React-Js-tut/tree/main/counter_project/src"
-    },
-
 ]
 
 export const skillset = [
     {
-        title: "Django",
-        percent: "89"
+        title: "Django Web Framework",
+        percent: "70"
     },
     {
-        title: "React",
+        title: "React JS",
+        percent: "80"
+    },
+    {
+        title: "Python",
         percent: "90"
     },
     {
-        title: "python",
-        percent: "90"
+        title: "UI/UX",
+        percent: "75"
     },
     {
-        title: "Django",
-        percent: "89"
+        title: "JavaScript",
+        percent: "60"
     },
     {
-        title: "React",
-        percent: "90"
-    },
-    {
-        title: "python",
-        percent: "90"
+        title: "Figma",
+        percent: "70"
     }
 ]

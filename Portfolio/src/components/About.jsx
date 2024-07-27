@@ -25,11 +25,11 @@ function About() {
           <span className="fancy-font text-5xl">About Me</span>
           <hr className="about-hr w-[3rem] mt-2 mb-4" />
           <span>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-            magnam mollitia qui id aliquid assumenda sint fuga odit maxime
-            animi. Voluptas, tempore? Ad veritatis ipsam ipsa quas quae
-            dignissimos saepe quo laborum? Non nesciunt repellat illo beatae
-            modi.
+            I am an engineering undergrad with a strong foundation in software
+            development. Certified Pythonista skilled in Django for backend
+            development. Proficient in UI/UX design and adept at creating
+            dynamic front-end experiences with React. Passionate about building
+            efficient and user-friendly applications.
           </span>
           <div className="infoblock">
             <img src={phoneCallIcon} alt="phone" />
@@ -51,9 +51,11 @@ function About() {
             <img src={languageIcon} alt="languages" />
             <span>English, Hindi</span>
           </div>
-          <button className="btn mt-7 w-[200px]">
-            <a href="mailto:adityamadwal@gmail.com">Email Me</a>
-          </button>
+          <a
+            href="mailto:adityamadwal@gmail.com"
+            className="btn mt-7 w-[200px] bg-[#fef3e2]">
+            Email Me
+          </a>
         </div>
         <div className="about-socials mt-7 flex flex-col justify-center items-start">
           <button className="btn social-btn w-fit h-fit">

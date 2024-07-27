@@ -7,11 +7,6 @@ import heybitmoji from "../assets/bitmojis/hey.png";
 import resume from "../assets/Aditya_Madwal_resume.pdf";
 
 function Hero() {
-  const handleDownload = () => {
-    // Trigger the download using the window location
-    window.location.href = "/resume.pdf";
-  };
-
   return (
     <div className="flex hero-section mb-0">
       <div className="herosocials w-[10%] h-[90vh] flex justify-center items-center">
@@ -51,7 +46,8 @@ function Hero() {
           This is <br />
           <span className="fancy-font text-7xl">Aditya Madwal.</span>
           <br />
-          Fullstack Developer <br />
+          Django Developer | React Developer | UI/UX
+          <br />
           <button className="btn mt-5">
             <a download={resume}>Download Resume</a>
           </button>

@@ -5,25 +5,23 @@ function ProjectCard(props) {
   // let techstack = ["23e32", "3232"];
   return (
     <article className=" project-card rounded-xl bg-red-50  p-5 mb-4 shadow-sm w-full">
+      <h3 className="mt-4 text-lg font-medium sm:text-xl mb-3">
+        {props.title}
+      </h3>
+      <p className="mt-1 text-sm text-gray-700 mb-3">{props.desc}</p>
       <div
         className="flex items-start sm:gap-8 w-full"
         style={{ wordBreak: "break-word" }}>
         <div>
-          {props.techstack.map((t) => {
-            return (
-              <strong className="rounded-full border bg-[#708871] px-3 py-1.5 text-[10px] font-medium text-white mr-2">
-                #{t}
-              </strong>
-            );
-          })}
-
-          <h3 className="mt-4 text-lg font-medium sm:text-xl">
-            <a href="#" className="hover:underline">
-              {props.title}
-            </a>
-          </h3>
-
-          <p className="mt-1 text-sm text-gray-700">{props.desc}</p>
+          <div className="flex flex-wrap">
+            {props.techstack.map((t) => {
+              return (
+                <strong className="rounded-full border bg-[#708871] px-3 py-1.5 text-[10px] font-medium text-white mr-2 mb-2">
+                  #{t}
+                </strong>
+              );
+            })}
+          </div>
 
           <div className="mt-4 sm:flex sm:items-center sm:gap-2">
             <div className="flex items-center gap-1 text-gray-500">

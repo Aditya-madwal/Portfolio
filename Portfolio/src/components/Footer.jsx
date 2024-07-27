@@ -63,6 +63,7 @@ function Footer() {
             </a>
           </div>
         </nav>
+
         <div className="footer-bitmoji">
           <img src={footerbit} alt="" className="w-[30vw]" />
         </div>

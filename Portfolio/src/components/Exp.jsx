@@ -27,15 +27,16 @@ function Exp() {
                     />
                   </svg>
                 </div>
-                <div className="timeline-end mb-10">
+                <div className="timeline-end mb-10 w-[80%]">
                   <time className="font-mono italic">{i.timeperiod}</time>
                   <div className="text-lg font-black">{i.role}</div>
-                  <div className="text-sm font-medium">
-                    {i.title},{i.firm}
+                  <div className="text-md font-medium">
+                    {i.title}, {i.firm}
                   </div>
+                  <br />
                   {i.desc}
                 </div>
-                <hr />
+                {i.id == experience.length ? <></> : <hr />}
               </li>
             );
           } else {
@@ -54,7 +55,7 @@ function Exp() {
                     />
                   </svg>
                 </div>
-                <div className="timeline-start mb-10 md:text-end">
+                <div className="timeline-start mb-10 md:text-end w-[80%]">
                   <time className="font-mono italic">{i.timeperiod}</time>
                   <div className="text-lg font-black">{i.role}</div>
                   <div className="text-md font-medium">
@@ -63,7 +64,7 @@ function Exp() {
                   <br />
                   {i.desc}
                 </div>
-                <hr />
+                {i.id == experience.length ? <></> : <hr />}
               </li>
             );
           }
