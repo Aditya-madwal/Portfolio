@@ -24,7 +24,7 @@ function About() {
         <div className="about-text w-[50%] p-[20px]">
           <span className="fancy-font text-5xl">About Me</span>
           <hr className="about-hr w-[3rem] mt-2 mb-4" />
-          <span>
+          <span className="w-[80%]">
             I am an engineering undergrad with a strong foundation in software
             development. Certified Pythonista skilled in Django for backend
             development. Proficient in UI/UX design and adept at creating
