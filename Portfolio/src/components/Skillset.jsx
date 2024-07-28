@@ -3,7 +3,7 @@ import SkillCard from "./SkillCard";
 
 import { skillset } from "../assets/data.";
 
-function Skillset() {
+function Skillset(props) {
   return (
     <div className="flex mt-[100px] justify-center items-center skill-set ml-[10vw] ">
       <div>
@@ -13,9 +13,13 @@ function Skillset() {
         </div>
       </div>
       <div className="skill-container carousel carousel-center rounded-box w-full h-fit space-x-4 p-4  shadow bg-transparent">
-        {skillset.map((s) => {
-          return <SkillCard title={s.title} percent={s.percent} />;
-        })}
+        {props.start ? (
+          skillset.map((s) => {
+            return <SkillCard title={s.title} percent={s.percent} />;
+          })
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   );

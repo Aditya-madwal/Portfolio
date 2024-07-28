@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -15,10 +15,24 @@ function App() {
   const ProjectRef = useRef();
   const skillRef = useRef();
   const contactRef = useRef();
+  const eduRef = useRef();
+
+  const [skillstart, setSkillStart] = useState(false);
+  useEffect(() => {
+    const skillobserver = new IntersectionObserver((e) => {
+      eduRef.current ? console.log("skill dikh gya") : null;
+      let e1 = e[0];
+      console.log(e1.isIntersecting);
+      e1.isIntersecting ? setSkillStart(true) : console.log("skill nhi dikha");
+    });
+    skillobserver.observe(skillRef.current);
+  }, []);
+
   return (
     <div
       className="min-h-screen bg-hero-pattern bg-cover bg-center bg-fixed "
-      style={{ cursor: `auto`, backgroundImage: `url(${charcoalbg})` }}>
+      style={{ cursor: `none`, backgroundImage: `url(${charcoalbg})` }}>
+      {/* navbar------------------------------ */}
       <div>
         <div className="navbar m-0 h-[10vh]">
           <div className="navbar-start">
@@ -46,6 +60,7 @@ function App() {
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-semibold">
                 <li>
                   <button
+                    style={{ cursor: "none" }}
                     onClick={() => {
                       aboutRef.current?.scrollIntoView({
                         behavior: "smooth",
@@ -56,6 +71,7 @@ function App() {
                 </li>
                 <li>
                   <button
+                    style={{ cursor: "none" }}
                     onClick={() => {
                       skillRef.current?.scrollIntoView({
                         behavior: "smooth",
@@ -66,6 +82,7 @@ function App() {
                 </li>
                 <li>
                   <button
+                    style={{ cursor: "none" }}
                     onClick={() => {
                       ProjectRef.current?.scrollIntoView({
                         behavior: "smooth",
@@ -82,6 +99,7 @@ function App() {
             <ul className="menu menu-horizontal px-1 text-xl">
               <li>
                 <button
+                  style={{ cursor: "none" }}
                   onClick={() => {
                     aboutRef.current?.scrollIntoView({
                       behavior: "smooth",
@@ -92,6 +110,7 @@ function App() {
               </li>
               <li>
                 <button
+                  style={{ cursor: "none" }}
                   onClick={() => {
                     skillRef.current?.scrollIntoView({
                       behavior: "smooth",
@@ -102,6 +121,7 @@ function App() {
               </li>
               <li>
                 <button
+                  style={{ cursor: "none" }}
                   onClick={() => {
                     ProjectRef.current?.scrollIntoView({
                       behavior: "smooth",
@@ -114,8 +134,8 @@ function App() {
           </div>
           <div className="navbar-end">
             <button
+              style={{ cursor: "none" }}
               className="btn font-bold  w-fit"
-              style={{ zIndex: 3 }}
               onClick={() => {
                 contactRef.current?.scrollIntoView({
                   behavior: "smooth",
@@ -132,9 +152,11 @@ function App() {
         <div id="aboutdiv" ref={aboutRef}>
           <About />
         </div>
-        <div ref={skillRef}>
-          <Skillset />
-          <Edu />
+        <div>
+          <Skillset start={skillstart} />
+          <div ref={skillRef}>
+            <Edu />
+          </div>
         </div>
         <Exp />
         <div ref={ProjectRef}>
