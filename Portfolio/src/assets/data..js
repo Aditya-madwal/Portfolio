@@ -7,14 +7,6 @@ export const experience = [
         timeperiod: "Aug 2023 - July 2024",
         desc: "Designed and created magazine pages for the Computer Science department, collaborating with the editorial team to enhance reader engagement through strategic use of color, typography, and imagery. Managed multiple tasks, met all deadlines, and facilitated bi-weekly strategy meetings with administration."
     },
-    {
-        id: 2,
-        title: "Microsoft Learn Student Ambassador Program (MLSA)",
-        firm: "Microsoft",
-        role: "Web Developer",
-        timeperiod: "July 2024 - Present",
-        desc: "Web Developer with experience in React contributing to web development projects within the MLSA group at KIET."
-    },
 ]
 
 export const projects = [
