@@ -47,11 +47,11 @@ export const projects = [
 export const skillset = [
     {
         title: "Django Web Framework",
-        percent: "70"
+        percent: "75"
     },
     {
         title: "React JS",
-        percent: "80"
+        percent: "70"
     },
     {
         title: "Python",
@@ -63,7 +63,7 @@ export const skillset = [
     },
     {
         title: "JavaScript",
-        percent: "60"
+        percent: "40"
     },
     {
         title: "Figma",
