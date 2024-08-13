@@ -10,16 +10,24 @@ export const experience = [
 ]
 
 export const projects = [
-    {
+     {
         id: 1,
+        title: "FriendsBook",
+        description: "Developed a social media web app using Django and React, featuring real-time chat, posts, comments, likes, and search functionality. Integrated WebSockets for seamless real-time communication and dynamic updates. The application delivers an interactive user experience with robust backend management and efficient front-end design for modern social engagement.",
+        techstack: ['python','Django Rest Framework', 'React JS', 'WebSockets', 'PostgresSQL', 'Tailwind CSS'],
+        timeperiod: "July 2024 - Present",
+        githublink: "https://github.com/Aditya-madwal/friendsbook",
+    },
+    {
+        id: 2,
         title: "HealthBond",
         description: "HealthBond is a web application built using Django, JavaScript, HTML, and CSS. It helps individuals with similar illnesses connect and communicate through dedicated chatrooms. Users can register, login, create chatrooms, join existing ones, and manage their profile and chatroom memberships.",
-        techstack: ['Django', 'HTML/CSS', 'Javascript', 'Python', 'WebScokets', 'PostgresSQL', 'AJAX', 'Gemini API'],
+        techstack: ['Django', 'HTML/CSS', 'Javascript', 'Python', 'WebSockets', 'PostgresSQL', 'AJAX', 'Gemini API'],
         timeperiod: "May 2024 - Jun 2024",
         githublink: "https://github.com/Aditya-madwal/Health-Bond",
     },
     {
-        id: 2,
+        id: 3,
         title: "Personal Portfolio",
         description: "Developed a personal portfolio using Tailwind CSS, React, and Daisy UI. The site features a clean, modern design with responsive layouts, showcasing my projects, skills, and experience. Interactive elements and smooth transitions enhance user experience, making it an engaging platform to present my work and professional background.",
         techstack: ['React', 'Tailwind', 'DaisyUI'],
@@ -27,7 +35,7 @@ export const projects = [
         githublink: "https://github.com/Aditya-madwal/Portfolio"
     },
     {
-        id: 3,
+        id: 4,
         title: "Sell-n-Buy",
         description: "Created an e-commerce website using Django, featuring robust functionalities like a shopping cart, review and rating system, and advanced search capabilities. The platform offers a seamless user experience with efficient product management and user-friendly navigation, enabling customers to browse, review, and purchase products effortlessly.",
         techstack: ['Python', 'Django', 'HTML/CSS', 'PostgresSQL', 'JavaScript', 'AJAX'],
@@ -35,7 +43,7 @@ export const projects = [
         githublink: "https://github.com/aditya-madwal/sell-and-buy"
     },
     {
-        id: 4,
+        id: 5,
         title: "PocketMoney",
         description: "PocketMoney is a budget tracker web application built with Django, Python, and Tailwind CSS. It provides a user-friendly interface for managing multiple wallets, tracking transactions, and maintaining a record of your expenses.",
         techstack: ['Python', 'Django', 'Tailwind', 'HTML/CSS', 'JavaScript'],
