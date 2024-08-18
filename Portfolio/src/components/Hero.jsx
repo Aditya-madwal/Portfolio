@@ -50,7 +50,7 @@ function Hero() {
           <br />
           <a
             className="btn mt-5 w-[40%] font-medium"
-            href="https://drive.google.com/file/d/1RChXbZUir9T5ppvA0m6dsudUlA5NhDJc/view">
+            href="https://drive.google.com/file/d/1q16_VjDXrkbAsYYGvI0P6SCHPGqjpTx-/view">
             View Resume →
           </a>
         </span>
