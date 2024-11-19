@@ -7,6 +7,14 @@ export const experience = [
         timeperiod: "Aug 2023 - July 2024",
         desc: "Designed and created magazine pages for the Computer Science department, collaborating with the editorial team to enhance reader engagement through strategic use of color, typography, and imagery. Managed multiple tasks, met all deadlines, and facilitated bi-weekly strategy meetings with administration."
     },
+    {
+        id: 2,
+        title: "Microsoft Learn Student Ambassador KIET",
+        firm: "KIET Group of Institutions",
+        role: "Full Stack Internship Coordinator",
+        timeperiod: "Oct 2024 - Nov 2024",
+        desc: "successfully coordinated internship placements for 400+ candidates, achieving a 75% completion rate through efficient onboarding and communication. By enhancing the MLSA KIET website's UI and navigation, I boosted candidate engagement by 25%. Streamlining the application process reduced administrative workload by 20%, and 94% of candidates provided positive feedback on the program."
+    },
 ]
 
 export const projects = [
